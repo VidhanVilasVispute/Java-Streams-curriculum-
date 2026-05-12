@@ -26,6 +26,8 @@ A functional interface **can** have:
 
 Before Java 8, to pass behavior you wrote anonymous inner classes:
 
+An *anonymous inner class* in Java is a class without a name that is created and used at the same time, usually for one-time use.
+
 ```java
 list.sort(new Comparator<String>() {
     @Override
@@ -48,6 +50,14 @@ The lambda is just a **concise implementation of the SAM**.
 ---
 
 ## The Four Core Pillars — `java.util.function`
+
+| Functional Interface | Common Non-Primitive Types             |
+| -------------------- | -------------------------------------- |
+| `Predicate<T>`       | `String`, `Integer`, `User`, `List`    |
+| `Function<T,R>`      | `String`, `Integer`, `Employee`, `Map` |
+| `Consumer<T>`        | `String`, `Object`, `Car`              |
+| `Supplier<T>`        | `String`, `List`, `User`               |
+
 
 ### 1. `Predicate<T>`
 
