@@ -1,6 +1,4 @@
-Let's go. We'll follow the roadmap exactly — one topic at a time, deep, interview-ready.
 
----
 
 # Phase 1 — Functional Interfaces
 
