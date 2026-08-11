@@ -55,10 +55,10 @@ The lambda is just a **concise implementation of the SAM**.
 
 | Functional Interface | Purpose | Common Non-Primitive Types |
 |----------------------|---------|----------------------------|
-| **Predicate<T>** | **Tests something** → returns `true` or `false`<br><br>*"Does this item meet the condition?"* | `String` — *is it empty?*<br>`Integer` — *is it even?*<br>`User` — *is it active?*<br>`List` — *is it empty?* |
-| **Function<T,R>** | **Transforms something** → takes T, returns R<br><br>*"Convert this into that"* | `String` → `Integer` *(length)*<br>`Integer` → `String` *(toString)*<br>`Employee` → `String` *(getName)*<br>`Map` → `List` *(values)* |
-| **Consumer<T>** | **Consumes something** → takes T, returns nothing<br><br>*"Do something with this, but don't give me back anything"* | `String` — *print it*<br>`Object` — *save to database*<br>`Car` — *drive it*<br>`List` — *process each item* |
-| **Supplier<T>** | **Supplies something** → takes nothing, returns T<br><br>*"Give me a new one"* | `String` — *generate a random string*<br>`List` — *create a new ArrayList*<br>`User` — *create a default user* |
+| **Predicate<T>** | **Filtering** → returns `true` or `false`<br><br>*"Does this item meet the condition?"* | `String` — *is it empty?*<br>`Integer` — *is it even?*<br>`User` — *is it active?*<br>`List` — *is it empty?* |
+| **Function<T,R>** | **Transformation** → takes T, returns R<br><br>*"Convert this into that"* | `String` → `Integer` *(length)*<br>`Integer` → `String` *(toString)*<br>`Employee` → `String` *(getName)*<br>`Map` → `List` *(values)* |
+| **Consumer<T>** | **performing action** → takes T, returns nothing<br><br>*"Do something with this, but don't give me back anything"* | `String` — *print it*<br>`Object` — *save to database*<br>`Car` — *drive it*<br>`List` — *process each item* |
+| **Supplier<T>** | **Generating data** → takes nothing, returns T<br><br>*"Give me a new one"* | `String` — *generate a random string*<br>`List` — *create a new ArrayList*<br>`User` — *create a default user* |
 
 ---
 
